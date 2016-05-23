@@ -1,0 +1,26 @@
+{
+  "name": "imooc",
+  "authors": [
+    "highmind <804798382@qq.com>"
+  ],
+  "description": "imooc",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "imooc"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
