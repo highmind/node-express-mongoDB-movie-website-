@@ -11,8 +11,13 @@ var Movie =require('./models/movie'); // 加载模型
 var port = process.env.PORT || 3000; //端口号
 var app = express();
 
-//连接数据库
-mongoose.connect('mongodb://localhost/imooc');
+//连接本地数据库
+// mongoose.connect('mongodb://localhost/imooc');
+
+//连接远程数据库
+//格式 mongoose.connect('mongodb://user:pwd@localhost:port/db');
+
+mongoose.connect('mongodb://imooc:imooc@192.168.1.99:27000/imooc');
 
 app.set('views','views/pages');  //模版引擎目录
 app.set('view engine', 'jade'); //模版引擎
